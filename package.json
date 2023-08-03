@@ -1,8 +1,16 @@
 {
   "name": "git-flow-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/gabrielhjs/git-flow-example.git",
   "author": "Gabriel Sá <gabriel.sa@laura-br.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "feature:start": "git flow feature start",
+    "feature:finish": "git flow feature finish",
+    "release:minor": "standard-version"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
 }
