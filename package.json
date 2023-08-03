@@ -4,5 +4,21 @@
   "main": "index.js",
   "repository": "https://github.com/gabrielhjs/git-flow-example.git",
   "author": "Gabriel Sá <gabriel.sa@laura-br.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "feature:start": "git flow feature start",
+    "feature:finish": "git flow feature finish",
+    "release": "standard-version",
+    "commit": "cz"
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
